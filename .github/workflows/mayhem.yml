@@ -50,56 +50,56 @@ jobs:
         uses: forallsecure/mcode-action@v1
         with:
           mayhem-token: ${{ secrets.mayhem_token }}
-          args: --file mayhemfiles/mayhemfile_memchr --image ${{ steps.meta.outputs.tags }}
+          args: --file mayhemfiles/Mayhemfile_memchr --image ${{ steps.meta.outputs.tags }}
           sarif-output: sarif
 
       - name: start analysis of memchr2
         uses: forallsecure/mcode-action@v1
         with:
           mayhem-token: ${{ secrets.mayhem_token }}
-          args: --file mayhemfiles/mayhemfile_memchr2 --image ${{ steps.meta.outputs.tags }}
+          args: --file mayhemfiles/Mayhemfile_memchr2 --image ${{ steps.meta.outputs.tags }}
           sarif-output: sarif
 
       - name: start analysis of memchr3
         uses: forallsecure/mcode-action@v1
         with:
           mayhem-token: ${{ secrets.mayhem_token }}
-          args: --file mayhemfiles/mayhemfile_memchr3 --image ${{ steps.meta.outputs.tags }}
+          args: --file mayhemfiles/Mayhemfile_memchr3 --image ${{ steps.meta.outputs.tags }}
           sarif-output: sarif
 
       - name: start analysis of memmem
         uses: forallsecure/mcode-action@v1
         with:
           mayhem-token: ${{ secrets.mayhem_token }}
-          args: --file mayhemfiles/mayhemfile_memmem --image ${{ steps.meta.outputs.tags }}
+          args: --file mayhemfiles/Mayhemfile_memmem --image ${{ steps.meta.outputs.tags }}
           sarif-output: sarif
 
       - name: start analysis of memrchr
         uses: forallsecure/mcode-action@v1
         with:
           mayhem-token: ${{ secrets.mayhem_token }}
-          args: --file mayhemfiles/mayhemfile_memrchr --image ${{ steps.meta.outputs.tags }}
+          args: --file mayhemfiles/Mayhemfile_memrchr --image ${{ steps.meta.outputs.tags }}
           sarif-output: sarif
 
       - name: start analysis of memrchr2
         uses: forallsecure/mcode-action@v1
         with:
           mayhem-token: ${{ secrets.mayhem_token }}
-          args: --file mayhemfiles/mayhemfile_memrchr2 --image ${{ steps.meta.outputs.tags }}
+          args: --file mayhemfiles/Mayhemfile_memrchr2 --image ${{ steps.meta.outputs.tags }}
           sarif-output: sarif
 
       - name: start analysis of memrchr3
         uses: forallsecure/mcode-action@v1
         with:
           mayhem-token: ${{ secrets.mayhem_token }}
-          args: --file mayhemfiles/mayhemfile_memrchr3 --image ${{ steps.meta.outputs.tags }}
+          args: --file mayhemfiles/Mayhemfile_memrchr3 --image ${{ steps.meta.outputs.tags }}
           sarif-output: sarif
 
       - name: start analysis of memrmem
         uses: forallsecure/mcode-action@v1
         with:
           mayhem-token: ${{ secrets.mayhem_token }}
-          args: --file mayhemfiles/mayhemfile_memrmem --image ${{ steps.meta.outputs.tags }}
+          args: --file mayhemfiles/Mayhemfile_memrmem --image ${{ steps.meta.outputs.tags }}
           sarif-output: sarif
 
       - name: Upload SARIF file(s)
