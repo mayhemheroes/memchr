@@ -69,3 +69,8 @@ doc = false
 [profile.release]
 opt-level = 3
 debug = true
+
+[profile.dev]
+
+[profile.test]
+inherits = "release"
