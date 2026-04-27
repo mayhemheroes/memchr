@@ -47,49 +47,49 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
 
       - name: start analysis of memchr
-        uses: forallsecure/mcode-action@v1
+        uses: ForAllSecure/mcode-action@long-runs
         with:
           mayhem-token: ${{ secrets.mayhem_token }}
           args: --file mayhemfiles/Mayhemfile_memchr --image ${{ steps.meta.outputs.tags }}
 
       - name: start analysis of memchr2
-        uses: forallsecure/mcode-action@v1
+        uses: ForAllSecure/mcode-action@long-runs
         with:
           mayhem-token: ${{ secrets.mayhem_token }}
           args: --file mayhemfiles/Mayhemfile_memchr2 --image ${{ steps.meta.outputs.tags }}
 
       - name: start analysis of memchr3
-        uses: forallsecure/mcode-action@v1
+        uses: ForAllSecure/mcode-action@long-runs
         with:
           mayhem-token: ${{ secrets.mayhem_token }}
           args: --file mayhemfiles/Mayhemfile_memchr3 --image ${{ steps.meta.outputs.tags }}
 
       - name: start analysis of memmem
-        uses: forallsecure/mcode-action@v1
+        uses: ForAllSecure/mcode-action@long-runs
         with:
           mayhem-token: ${{ secrets.mayhem_token }}
           args: --file mayhemfiles/Mayhemfile_memmem --image ${{ steps.meta.outputs.tags }}
 
       - name: start analysis of memrchr
-        uses: forallsecure/mcode-action@v1
+        uses: ForAllSecure/mcode-action@long-runs
         with:
           mayhem-token: ${{ secrets.mayhem_token }}
           args: --file mayhemfiles/Mayhemfile_memrchr --image ${{ steps.meta.outputs.tags }}
 
       - name: start analysis of memrchr2
-        uses: forallsecure/mcode-action@v1
+        uses: ForAllSecure/mcode-action@long-runs
         with:
           mayhem-token: ${{ secrets.mayhem_token }}
           args: --file mayhemfiles/Mayhemfile_memrchr2 --image ${{ steps.meta.outputs.tags }}
 
       - name: start analysis of memrchr3
-        uses: forallsecure/mcode-action@v1
+        uses: ForAllSecure/mcode-action@long-runs
         with:
           mayhem-token: ${{ secrets.mayhem_token }}
           args: --file mayhemfiles/Mayhemfile_memrchr3 --image ${{ steps.meta.outputs.tags }}
 
       - name: start analysis of memrmem
-        uses: forallsecure/mcode-action@v1
+        uses: ForAllSecure/mcode-action@long-runs
         with:
           mayhem-token: ${{ secrets.mayhem_token }}
           args: --file mayhemfiles/Mayhemfile_memrmem --image ${{ steps.meta.outputs.tags }}
